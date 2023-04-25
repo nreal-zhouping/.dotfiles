@@ -1,0 +1,8 @@
+pane	sweeper	1	:scan_closest_points	1	:*	1	:/home/ducc/catkin_sweeper/src/scan_closest_points	1	bash	:vim src/scan_closest_points.cpp
+vim src/scan_closest_points_node.cpp
+pane	sweeper	2	:cm	0	:	1	:/home/ducc/catkin_sweeper	1	bash	:
+pane	sweeper	3	:sweeper	0	:-	1	:/home/ducc	1	bash	:
+window	sweeper	1	1	:*	b49d,204x61,0,0,0
+window	sweeper	2	0	:	b49e,204x61,0,0,1
+window	sweeper	3	0	:-	b49f,204x61,0,0,2
+state	sweeper	

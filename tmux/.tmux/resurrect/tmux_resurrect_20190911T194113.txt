@@ -1,0 +1,9 @@
+pane	0	1	:bash	1	:*	1	:/home/ducc	1	bash	:
+pane	sweeper	1	:ground_points	1	:*	1	:/home/ducc/catkin_sweeper/src/ground_points	1	bash	:
+pane	sweeper	2	:cm	0	:	1	:/home/ducc/catkin_sweeper	1	bash	:
+pane	sweeper	3	:sweeper	0	:-	1	:/home/ducc	1	bash	:
+window	0	1	1	:*	b49d,204x61,0,0,0
+window	sweeper	1	1	:*	b4a3,204x61,0,0,6
+window	sweeper	2	0	:	b4a6,204x61,0,0,9
+window	sweeper	3	0	:-	b4a0,204x61,0,0,3
+state	sweeper	0

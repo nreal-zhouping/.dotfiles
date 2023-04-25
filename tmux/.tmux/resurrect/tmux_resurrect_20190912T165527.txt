@@ -1,0 +1,9 @@
+pane	0	1	:~	1	:*	1	:/home/ducc	1	zsh	:
+pane	sweeper	1	:..generate_path	1	:*	1	:/home/ducc/catkin_sweeper/src/regenerate_path	1	zsh	:
+pane	sweeper	2	:..atkin_sweeper	0	:	1	:/home/ducc/catkin_sweeper	1	zsh	:bash
+pane	sweeper	3	:~	0	:#-	1	:/home/ducc	1	zsh	:
+window	0	1	1	:*	c07e,184x54,0,0,1
+window	sweeper	1	1	:*	c07f,184x54,0,0,2
+window	sweeper	2	0	:	c080,184x54,0,0,3
+window	sweeper	3	0	:#-	c081,184x54,0,0,4
+state	sweeper	0
