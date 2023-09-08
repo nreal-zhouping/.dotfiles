@@ -24,3 +24,10 @@ fi
 nvim +PackerSync
 echo "Please install language server"
 echo "sudo apt install nodejs npm && sudo npm install -g bash-language-server pyright vscode-langservers-extracted typescript typescript-language-server"
+echo "some like: sudo snap install clangd; sudo apt-get install clangd-10; sudo update-alternatives --install /usr/bin/clangd clangd /usr/bin/clangd-10 100"
+echo ""
+echo "Add alias:"
+echo "ubuntu:"
+echo "alias vi='nvim -u /home/zhouping/.config/nvim/init.lua'"
+echo "mac:"
+echo "alias vi='nvim -u /Users/zhouping/.config/nvim/init.lua'"

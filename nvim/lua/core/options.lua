@@ -52,6 +52,16 @@ opt.tabstop = 2             -- 1 tab == 2 spaces
 opt.smartindent = true      -- Autoindent new lines
 
 -----------------------------------------------------------
+-- Fold
+-----------------------------------------------------------
+-- 开启 Folding 模块
+vim.opt.foldmethod = "expr"
+vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
+-- 默认不要折叠
+-- https://stackoverflow.com/questions/8316139/how-to-set-the-default-to-unfolded-when-you-open-a-file
+vim.opt.foldlevel = 99
+
+-----------------------------------------------------------
 -- Memory, CPU
 -----------------------------------------------------------
 opt.hidden = true           -- Enable background buffers
