@@ -10,3 +10,4 @@ conda install -c conda-forge tmux
 #install stylua for neovim
 brew install stylua
 
+conda install matplotlib
