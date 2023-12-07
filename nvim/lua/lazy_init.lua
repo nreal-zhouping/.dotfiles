@@ -33,7 +33,14 @@ local plugins = {  -- Add you plugins here:
   'kyazdani42/nvim-tree.lua',
 
   -- Indent line
-  'lukas-reineke/indent-blankline.nvim',
+  -- 'lukas-reineke/indent-blankline.nvim',
+  { "lukas-reineke/indent-blankline.nvim",
+    main = "ibl",
+    config = function()
+      require('ibl').setup()
+    end
+
+  },
 
   -- Autopair
   {
@@ -174,13 +181,25 @@ local plugins = {  -- Add you plugins here:
 
   { 'sindrets/diffview.nvim', dependencies = 'nvim-lua/plenary.nvim' },
 
+  -- {
+  --   'TimUntersberger/neogit',
+  --   dependencies = {
+  --     'nvim-lua/plenary.nvim',
+  --     'sindrets/diffview.nvim'
+  --   },
+  -- },
+
   {
-    'TimUntersberger/neogit',
+    "NeogitOrg/neogit",
     dependencies = {
-      'nvim-lua/plenary.nvim',
-      'sindrets/diffview.nvim'
+      "nvim-lua/plenary.nvim",         -- required
+      "nvim-telescope/telescope.nvim", -- optional
+      "sindrets/diffview.nvim",        -- optional
+      "ibhagwan/fzf-lua",              -- optional
     },
+    config = true
   },
+
   -- use {
     -- 'github/copilot.vim'
   -- }
