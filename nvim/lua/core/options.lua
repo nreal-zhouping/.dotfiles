@@ -14,6 +14,7 @@ local opt = vim.opt   -- Set options (global/buffer/windows-scoped)
 -----------------------------------------------------------
 opt.guifont = 'DroidSansMono Nerd Font'
 -- opt.mouse = 'a'                       -- Enable mouse support
+opt.mouse = ''                       -- Disable mouse support
 opt.clipboard = 'unnamedplus'         -- Copy/paste to system clipboard
 opt.swapfile = false                  -- Don't use swapfile
 opt.completeopt = 'menuone,noinsert,noselect'  -- Autocomplete options
@@ -50,6 +51,16 @@ opt.expandtab = true        -- Use spaces instead of tabs
 opt.shiftwidth = 2          -- Shift 4 spaces when tab
 opt.tabstop = 2             -- 1 tab == 2 spaces
 opt.smartindent = true      -- Autoindent new lines
+
+-----------------------------------------------------------
+-- Fold
+-----------------------------------------------------------
+-- 开启 Folding 模块
+vim.opt.foldmethod = "expr"
+vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
+-- 默认不要折叠
+-- https://stackoverflow.com/questions/8316139/how-to-set-the-default-to-unfolded-when-you-open-a-file
+vim.opt.foldlevel = 99
 
 -----------------------------------------------------------
 -- Memory, CPU

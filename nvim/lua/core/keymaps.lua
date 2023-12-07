@@ -29,6 +29,7 @@ map('i', 'fd', '<Esc>')
 
 -- Clear search highlighting with <leader> and c
 map('n', '<leader>c', ':nohl<CR>')
+map('n', '<leader>s', ':w<CR>')
 
 -- Change split orientation
 map('n', '<leader>tk', '<C-w>t<C-w>K') -- change vertical to horizontal
@@ -45,7 +46,6 @@ map('n', '<leader>r', ':so ~/.config/nvim/init.lua<CR>')
 
 -- Fast saving with <leader> and s
 map('n', '<leader>fs', ':update<CR>')
-map('n', '<leader>w', ':w<CR>')
 
 -- Close all windows and exit from Neovim with <leader> and q
 map('n', '<leader>qs', ':q!<CR>')
