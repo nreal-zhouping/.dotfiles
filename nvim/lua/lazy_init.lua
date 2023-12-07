@@ -212,16 +212,21 @@ local plugins = {  -- Add you plugins here:
   {'kdheepak/lazygit.nvim'},
 
   {
-    "jcdickinson/codeium.nvim",
-    dependencies = {
-        "nvim-lua/plenary.nvim",
-        "hrsh7th/nvim-cmp",
-    },
-    config = function()
-        require("codeium").setup({
-        })
-    end
-  },
+    'Exafunction/codeium.vim',
+    event = 'BufEnter'
+  }
+
+  --{
+  --  "jcdickinson/codeium.nvim",
+  --  dependencies = {
+  --      "nvim-lua/plenary.nvim",
+  --      "hrsh7th/nvim-cmp",
+  --  },
+  --  config = function()
+  --      require("codeium").setup({
+  --      })
+  --  end
+  --},
 }
 
 local opts = {}
