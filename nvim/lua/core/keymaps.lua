@@ -76,13 +76,16 @@ map('n', '<leader>6', ':BufferLineGoToBuffer 6<CR>')
 map('n', '<leader>7', ':BufferLineGoToBuffer 7<CR>')
 map('n', '<leader>8', ':BufferLineGoToBuffer 8<CR>')
 map('n', '<leader>9', ':BufferLineGoToBuffer 9<CR>')
+--选择某一个Buffer
+map('n', 'gb', ':BufferLinePick<CR>')
 -- map('n', '<leader>l', ':BufferLineCycleNext <CR>')
 -- map('n', '<leader>h', ':BufferLineCyclePrev <CR>')
 map('n', '<leader>k', ':BufferLineTogglePin <CR>')
 map('n', '<C-l>', ':BufferLineCycleNext <CR>')
 map('n', '<C-h>', ':BufferLineCyclePrev <CR>')
 
-map('n', 'gb', ':BufferLinePick<CR>')
+-- 关闭当前Buffer
+map('n', '<leader>c', ':bdelete %<CR>')
 
 
 -- Telescope
