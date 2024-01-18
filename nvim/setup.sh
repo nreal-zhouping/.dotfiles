@@ -9,14 +9,14 @@ else
 
     # 如果用户选择是，执行安装命令
     if [ "$answer" == "y" ]; then
-        echo "开始安装nvim..."
-        sudo add-apt-repository ppa:neovim-ppa/unstable
-        sudo apt-get update
-        sudo apt-get install neovim
+      echo "开始安装nvim..."
+      sudo add-apt-repository ppa:neovim-ppa/unstable
+      sudo apt-get update
+      sudo apt-get install neovim
 
-	#lsp support
-        sudo apt-get npm
-	sudo npm i -g pyright
+	    #lsp support
+      sudo apt-get npm
+	    sudo npm i -g pyright
     else
         echo "取消安装."
         exit 1
