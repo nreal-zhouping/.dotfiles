@@ -46,7 +46,7 @@ local opts = { noremap = true, silent = true }
 lvim.keys.normal_mode["C-s"] = {"<cmd>lua require('copilot.suggestion').toggle_auto_trigger()<CR>"}
 lvim.keys.normal_mode["<C-l>"] = {"<cmd>BufferLineCycleNext <CR>"}
 lvim.keys.normal_mode["<C-h>"] = {"<cmd>BufferLineCyclePrev <CR>"}
-lvim.keys.normal_mode["<C-n>"] = { '<cmd>NvimTreeToggle<CR>' }
+-- lvim.keys.normal_mode["<C-n>"] = { '<cmd>NvimTreeToggle<CR>' }
 lvim.keys.normal_mode["<C-g>"] = { '<cmd>call codeium#Accept<CR>' }
 lvim.keys.normal_mode["<C-;>"] = { '<cmd>call codeium#CycleCompletions(1)<CR>' }
 lvim.keys.normal_mode["<C-,>"] = { '<cmd>call codeium#CycleCompletions(-1)<CR>' }
